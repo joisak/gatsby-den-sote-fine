@@ -19,7 +19,7 @@ collections:
   - name: settings
     label: Settings
     files:
-      - file: localtest/settings/navigation.yml
+      - file: content/settings/navigation.yml
         label: Navigation
         name: navigation
         fields:

@@ -1,5 +1,0 @@
-- name: main-menu
-    label: Main menu
-    fields:
-      - { name: path, label: Path }
-      - { name: menu-item, label: Menu Item }
