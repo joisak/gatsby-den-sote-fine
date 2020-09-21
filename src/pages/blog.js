@@ -1,11 +1,10 @@
+import { graphql, Link } from "gatsby"
 import React from "react"
-import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Button from "../components/button"
+import Layout from "../components/layout"
 import SearchPosts from "../components/searchPosts"
+import SEO from "../components/seo"
 
 class Blog extends React.Component {
   render() {
