@@ -3,3 +3,5 @@ nav_items:
     path: /menu
   - label: Oss
     path: /oss
+  - label: Galleri
+    path: /gallery
