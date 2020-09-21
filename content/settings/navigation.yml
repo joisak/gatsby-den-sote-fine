@@ -1,7 +1,4 @@
 nav_items:
-  - label: Meny
-    path: /menu
-  - label: Oss
-    path: /oss
-  - label: Galleri
-    path: /gallery
+  - { label: "Home", path: "/" }
+  - { label: "Products", path: "/products/" }
+  - { label: "News", path: "/news/" }
