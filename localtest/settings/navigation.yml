@@ -1,0 +1,5 @@
+nav_items:
+  - label: Meny
+    path: /menu
+  - label: Oss
+    path: /oss
