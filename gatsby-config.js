@@ -16,7 +16,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-
+    "gatsby-transformer-yaml",
+    //this plugin makes graphQL read yaml files
     {
       resolve: "gatsby-plugin-local-search",
       options: {
@@ -84,9 +85,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/menu/`,
+        name: `menu`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: [".mdx", ".md", ".yml"],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

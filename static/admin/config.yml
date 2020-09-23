@@ -16,16 +16,29 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
-    - name: settings
-      label: Settings
-      files:
-        - file: content/settings/navigation.yml
-          label: Navigation
-          name: navigation
-          fields:
-            - label: Navigation
-              name: nav_items
-              widget: list
-              fields:
-                - {label: Label, name: label, widget: string}
-                - {label: Path, name: path, widget: string}
+  - name: settings
+    label: Settings
+    files:
+      - file: content/settings/navigation.yml
+        label: Navigation
+        name: navigation
+        fields:
+          - label: Navigation
+            name: nav_items
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Path, name: path, widget: string }
+  - name: menu
+    label: Menu
+    files:
+      - file: content/menu/menu.yml
+        label: Menu
+        name: menu
+        fields:
+          - label: Main menu
+            name: main-menu
+            widget: list
+            fields:
+              - { label: Name of the dish, name: name, widget: string }
+              - { label: Price, name: price, widget: string }
