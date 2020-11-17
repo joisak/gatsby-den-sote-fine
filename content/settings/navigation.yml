@@ -1,2 +1,7 @@
 label: kotte
 path: /kotte
+header-navigation:
+  - link-title: Kottens hemlighet
+    link-path: /kottens-hemlighet
+  - link-title: Vrålet från den hemska staden
+    link-path: /the-scream-from-the-bad-city
