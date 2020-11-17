@@ -4,4 +4,6 @@ nav_items:
     path: /kotte
   - label: Skogen
     path: /skogen
+  - label: dasdasd
+    path: asdasdasdas
 ---
