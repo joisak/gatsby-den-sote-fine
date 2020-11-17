@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import Bio from "../components/bio"
 import Button from "../components/button"
 import Layout from "../components/layout"
 import SearchPosts from "../components/searchPosts"
@@ -16,7 +15,7 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
+
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}
@@ -44,7 +43,10 @@ export const pageQuery = graphql`
       index
       store
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+    ) {
       edges {
         node {
           excerpt

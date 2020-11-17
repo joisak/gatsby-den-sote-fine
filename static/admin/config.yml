@@ -2,6 +2,8 @@ backend:
   name: github
   repo: joisak/gatsby-den-sote-fine
 
+local-backend: true
+
 media_folder: content/assets
 public_folder: ../assets
 
@@ -16,19 +18,16 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
-  - name: settings
-    label: Settings
-    files:
-      - file: content/settings/navigation.yml
-        label: Navigation
-        name: navigation
+  - name: navigation
+    label: Navigation
+    folder: content/settings/navigation.yml
+    fields:
+      - label: Navigation
+        name: nav_items
+        widget: list
         fields:
-          - label: Navigation
-            name: nav_items
-            widget: list
-            fields:
-              - { label: Label, name: label, widget: string }
-              - { label: Path, name: path, widget: string }
+          - { label: Label, name: label, widget: string }
+          - { label: Path, name: path, widget: string }
   - name: menu
     label: Menu
     files:

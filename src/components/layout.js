@@ -1,7 +1,7 @@
-import React from "react"
 import { Link } from "gatsby"
+import React from "react"
 import styled from "styled-components"
-
+import Header from "../components/header"
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -55,6 +55,7 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
+        <Header></Header>
         <div
           style={{
             marginLeft: `auto`,
