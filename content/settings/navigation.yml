@@ -1,11 +1,11 @@
 label: kotte
 path: /kotte
 header-navigation:
-  - link-title: Kottens hemlighet
-    link-path: /kottens-hemlighet
-  - link-title: Vrålet från den hemska staden
-    link-path: /the-scream-from-the-bad-city
-  - link-title: Penis
-    link-path: /blog
-  - link-title: Cool
-    link-path: /cool
+  - link-title: Hos oss
+    link-path: /hos-oss
+  - link-title: Våra grejer
+    link-path: /vara-grejer
+  - link-title: Meny
+    link-path: /meny
+  - link-title: Evenemang
+    link-path: /evenemang
