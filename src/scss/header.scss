@@ -3,11 +3,10 @@
     padding: 24px 0;
     list-style-type: none;
     margin: 0;
+    align-items: center;
     justify-content: space-between;
-    .right {
-        
-    }
-    .left {
-
+    a {
+        width: 100px;
+        text-align: center;
     }
 }
