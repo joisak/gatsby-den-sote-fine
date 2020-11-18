@@ -12,13 +12,17 @@ class Layout extends React.Component {
   
     return (
       <div className="wrapper">
-      <div className="container main-content">
-        <Header></Header>
-       
-        <div className="footer">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div className="container">
+          <div className="inner-wrapper">
+            <Header></Header>
+            <div className="main-content">
+            {children}
+            </div>
+          <div className="footer">
+            <div>
+              © {new Date().getFullYear()} Den Søde Fine
+            </div>
+          </div>
           </div>
         </div>
       </div>

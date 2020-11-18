@@ -3,20 +3,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-class IndexPage extends React.Component {
+class MenuPage extends React.Component {
   render() {
     const siteTitle = "Gatsby Starter Personal Website"
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout title={siteTitle}>
         <SEO
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        
+            OUR MENU
       </Layout>
     )
   }
 }
 
-export default IndexPage
+export default MenuPage
