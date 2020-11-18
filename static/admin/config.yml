@@ -18,16 +18,6 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
-  - name: navigation
-    label: Navigation
-    folder: content/settings/navigation.yml
-    fields:
-      - label: Navigation
-        name: nav_items
-        widget: list
-        fields:
-          - { label: Label, name: label, widget: string }
-          - { label: Path, name: path, widget: string }
   - name: menu
     label: Menu
     files:
@@ -41,3 +31,17 @@ collections:
             fields:
               - { label: Name of the dish, name: name, widget: string }
               - { label: Price, name: price, widget: string }
+  - name: navigation
+    label: Navigation
+    files:
+      - file: content/settings/navigation.yml
+        label: Navigation
+        name: nav_items
+        widget: list
+        fields:
+          - label: Header Navigation
+            name: header-navigation
+            widget: list
+            fields:
+              - { label: Link-title, name: link-title, widget: string }
+              - { label: Path, name: link-path, widget: string }

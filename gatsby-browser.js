@@ -1,3 +1,7 @@
 // custom typefaces
-import "typeface-montserrat"
+// BOOTSTRAP
+import "bootstrap/dist/css/bootstrap.min.css"
 import "typeface-merriweather"
+import "typeface-montserrat"
+
+

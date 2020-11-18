@@ -1,9 +1,0 @@
----
-nav_items:
-  - label: Kotte
-    path: /kotte
-  - label: Skogen
-    path: /skogen
-  - label: dasdasd
-    path: asdasdasdas
----

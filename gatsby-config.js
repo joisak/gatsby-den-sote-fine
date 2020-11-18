@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-transformer-yaml",
     //this plugin makes graphQL read yaml files
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-local-search",
       options: {
