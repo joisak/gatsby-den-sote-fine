@@ -2,10 +2,11 @@
 
 .wrapper {
     min-height: 100vh;
-    border: 24px solid pink;
+    border: 12px solid pink;
     @include md {
         border: none;
         background-color: pink;
+        border: 24px solid pink;
     }
 }
 

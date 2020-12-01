@@ -8,17 +8,14 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
-
-  
     return (
       <div className="wrapper">
         <div className="container">
-        
           <div className="inner-wrapper">
             <Header></Header>
             <div className="main-content">
-            {children}
-          </div>
+              {children}
+            </div>
           <div className="footer">
             <div>
               © {new Date().getFullYear()} den søde fine
