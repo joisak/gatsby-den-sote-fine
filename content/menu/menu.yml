@@ -1,7 +1,10 @@
 main-menu:
   - name: Kottepasta
     price: 200kr
+    description: massa kottar och grejer i
   - name: Löksoppa med ormfilé
     price: 200kr
+    description: som det låter, soppa med lök och ormfilé som snask
   - name: Spädgris med sallad
     price: $500
+    description: liten gris som grillats i två dagar, salladen är en svettig pizzasallad
