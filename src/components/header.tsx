@@ -1,10 +1,11 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
+import logo from './../../content/assets/cakeCenter_text.svg';
 import './../scss/header.scss';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query HeaderMenu {
       allSettingsYaml {
         nodes {
           header_navigation {
@@ -23,16 +24,16 @@ const Header = () => {
         
         { headerMenu.map((item, index) => {
           if(index <= 1)
-            return (<Link to={item.link_path}>{item.link_title}</Link>)
+            return (<Link key={index} to={item.link_path}>{item.link_title}</Link>)
         }) }
         
         <div className="logo">
-          LOGO
+          <img src={logo} />
         </div>
         
         { headerMenu.map((item, index) => {
           if(index >= 2)
-            return (<Link to={item.link_path}>{item.link_title}</Link>)
+            return (<Link key={index} to={item.link_path}>{item.link_title}</Link>)
         }) }
         
         

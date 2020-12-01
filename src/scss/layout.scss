@@ -1,11 +1,19 @@
+@import './mixins';
+
 .wrapper {
-    background-color: pink;
     min-height: 100vh;
+    border: 24px solid pink;
+    @include md {
+        border: none;
+        background-color: pink;
+    }
 }
 
 .inner-wrapper{
     background-color: white;
-    border: 24px solid red;
+    @include md {
+        border: 24px solid red;
+    }
 }
 
 .main-content {

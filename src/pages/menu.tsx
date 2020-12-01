@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import MainMenu from '../components/MainMenu'
 import SEO from "../components/seo"
 
 
@@ -14,6 +15,7 @@ class MenuPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
             OUR MENU
+            <MainMenu></MainMenu>
       </Layout>
     )
   }
