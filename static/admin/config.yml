@@ -18,6 +18,16 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+  - name: menus
+    label: Menus
+    folder: content/menus
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
   - name: menu
     label: Menu
     files:
@@ -32,6 +42,7 @@ collections:
               - { label: Name of the dish, name: name, widget: string }
               - { label: Description, name: description, widget: string }
               - { label: Price, name: price, widget: string }
+
   - name: navigation
     label: Navigation
     files:

@@ -11,6 +11,7 @@ const MainMenu = () => {
             main_menu {
               name
               price
+              description
             }
           }
         }
@@ -23,7 +24,7 @@ const MainMenu = () => {
     <ul>
         { mainMenu && mainMenu.map( (item, index) => {
             return (
-            <li key={index}><span>{ item.name }</span><span>{item.price}</span></li>
+            <li key={index}><span>{ item.name }</span><span><small>{item.description}</small></span><span>{item.price}</span></li>
             )
         })}
     </ul>
