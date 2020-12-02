@@ -33,16 +33,18 @@ const Header = () => {
         
         { headerMenu.map((item, index) => {
           if(index <= 1)
-            return (<Link key={index} to={item.link_path}>{item.link_title}</Link>)
+            return (<div className="link"><Link key={index} to={item.link_path}>{item.link_title}</Link></div>)
         }) }
         
         <div className="logo">
-          <img src={logo} />
+          <Link to={'/'}>
+            <img src={logo} />
+          </Link>
         </div>
         
         { headerMenu.map((item, index) => {
           if(index >= 2)
-            return (<Link key={index} to={item.link_path}>{item.link_title}</Link>)
+            return (<div className="link"><Link key={index} to={item.link_path}>{item.link_title}</Link></div>)
         }) }
         
           <div className="mobile-menu-button" onClick={showMenu}>
@@ -59,7 +61,7 @@ const Header = () => {
             <ul>
             {headerMenu && headerMenu.map((item, index) => {
               return (
-              <li><Link key={index} to={item.link_path}>{item.link_title}</Link></li>
+              <li key={index}><Link to={item.link_path}>{item.link_title}</Link></li>
               )
             }) }
             </ul>

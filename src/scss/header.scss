@@ -19,8 +19,9 @@
             width: auto;
         }
     }
-    a {
+    .link {
         width: 100px;
+        text-decoration: none;
         text-align: center;
         display: none;
         @include md {

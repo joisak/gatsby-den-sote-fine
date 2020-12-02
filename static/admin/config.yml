@@ -23,11 +23,16 @@ collections:
     folder: content/menus
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: name, label: Menu Title }
       - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
+      - label: Dishes
+        name: dishes
+        widget: list
+        fields:
+          - { label: Name of the dish, name: name, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Price, name: price, widget: string }
   - name: menu
     label: Menu
     files:

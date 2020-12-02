@@ -5,29 +5,55 @@ import React from 'react';
 const MainMenu = () => {
 
     const data = useStaticQuery(graphql`
-    query MyQuery {
-        allMenuYaml {
-          nodes {
-            main_menu {
-              name
-              price
-              description
+    query Menus {
+      allFile(filter: { sourceInstanceName: { eq: "menus" } }) {
+        edges {
+          node {
+            childMdx {
+              frontmatter {
+                date
+                name
+                description
+                dishes {
+                  name
+                  description
+                  price
+                }
+              }
             }
           }
         }
       }
+    }
   `),
-  mainMenu = data.allMenuYaml.nodes[0].main_menu;
+   mainMenu = data.allFile.edges;
+   //[0].node.childMdx.frontmatter
     return (
     <>
     {console.log('MAIN MENU = ', mainMenu)}
-    <ul>
-        { mainMenu && mainMenu.map( (item, index) => {
-            return (
-            <li key={index}><span>{ item.name }</span><span><small>{item.description}</small></span><span>{item.price}</span></li>
-            )
+    {console.log('MAIN MENU = ', data)}
+    {mainMenu && mainMenu.map((item, index) => {
+      let menu = item.node.childMdx.frontmatter;
+      {console.log(menu)}
+      return (
+        <div key={index}>
+        <h1>{menu.name}</h1>
+        <small>{menu.description}</small>
+        <ul>
+        {menu.dishes.map((dish, index) => {
+          return (
+          <li key={index}><span>{dish.name} {dish.description}</span><span>{dish.price}</span></li>
+          )
         })}
+        </ul>
+      </div>
+        )
+      
+    })}
+    <ul>
+        
     </ul>
+    
     </>
     )
 }
