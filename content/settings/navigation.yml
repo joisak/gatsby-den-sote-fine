@@ -5,7 +5,7 @@ header-navigation:
     link-path: /our-place
   - link-title: Meny
     link-path: /menu
-  - link-title: Våra grejer
-    link-path: /vara-grejer
+  - link-title: Boka bord
+    link-path: /book-table
   - link-title: Evenemang
     link-path: /blog
